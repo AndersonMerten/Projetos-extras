@@ -41,6 +41,7 @@ html{
 }
 body{
     background: url('brushed_alu.png');
+    text-align: justify;
 }
 .clearfix:before,
 .clearfix:after {
@@ -322,4 +323,15 @@ section{
 footer a{
   text-decoration: none;
   color: black;
+}
+.row a{
+  text-decoration: none;
+  color: black;
+}
+
+footer:hover a{
+  text-decoration: none;
+}
+.container:hover nav>a{
+    text-decoration: none;
 }
