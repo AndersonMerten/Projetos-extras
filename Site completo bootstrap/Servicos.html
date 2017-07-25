@@ -11,14 +11,14 @@
 
     <title>Pilates!</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="CSS/bootstrap.min.css" rel="stylesheet">
-    <link href="CSS/css.css" rel="stylesheet">
+    <!-- Bootstrap core css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="JS/ie10-viewport-bug-workaround.js"></script>
-    <script src="JS/main.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/main.js"></script>
     <!-- Custom styles for this template -->
-    <link href="./CSS/carousel.css" rel="stylesheet">
+
   </head>
   <body>
 
@@ -31,7 +31,11 @@
             </div>
             <div class="header-right">
                 <label for="open">
-                    <span class="hidden-desktop"></span>
+                  <div class="hidden-desktop" onclick="myFunction(this)">
+                          <div class="bar1"></div>
+                          <div class="bar2"></div>
+                          <div class="bar3"></div>
+                    </div>
                 </label>
                 <input type="checkbox" name="" id="open">
                 <nav>
@@ -46,12 +50,15 @@
     </header>
     <!-- fim header -->
 
-    <div class="container">
+
 
       <div class="jumbotron">
+        <div class="container">
         <h1>Serviços oferecidos</h1>
         <p>Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.</p>
       </div>
+    </div>
+    <div class="container">
           <hr>
 
           <div class="col-md-12">
@@ -84,7 +91,7 @@
 
     </div><!-- /.container -->
 
-    <!-- jQuery first, then Bootstrap JS. -->
+    <!-- jQuery first, then Bootstrap js. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
   </body>
