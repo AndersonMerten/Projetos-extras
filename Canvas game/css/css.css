@@ -1,0 +1,12 @@
+html,body
+{
+	height:98.0%;
+	width:99.5%;
+
+}
+canvas
+{  padding: 0.5%;
+	display:block;
+	width:99%;
+	height:100%;
+}
