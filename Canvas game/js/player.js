@@ -1,7 +1,6 @@
 var player1 = {
-  
   animation: sprite ({
-    number: 0,
+    number: 6,
     ticksPerFrame:0,
     numberOfFrames:3,
     direction:1,
@@ -9,6 +8,12 @@ var player1 = {
     width:90,
     height: 120,
     image: charactersImage,
+    position: {
+      x:0,
+      y:0,
+      with:30,
+      height:30
+    },
   }),
 };
 
@@ -27,6 +32,7 @@ function sprite(options){
 		that.width = options.width;
 		that.height = options.height;
 		that.image = options.image;
+    that.position = options.position;
 		that.update = function () {
             tickCount += 1;
 
@@ -45,10 +51,8 @@ function sprite(options){
         };
 
 		that.render = function () {
-      console.log(frameIndex);
-
 		  // Clear the canvas
-		  that.context.clearRect(0, 0, that.width/3, that.height/4);
+		  that.context.clearRect(options.position.x, options.position.y-3, 30, 36);
 
 		  // Draw the animation
 		  that.context.drawImage(
@@ -57,8 +61,8 @@ function sprite(options){
         that.direction*that.height/4,
 		    that.width / numberOfFrames,
 		    that.height/4,
-		    0,
-		    0,
+		    options.position.x,
+		    options.position.y,
 		    that.width / numberOfFrames,
 		    that.height/4);
 		};

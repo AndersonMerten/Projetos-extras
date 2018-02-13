@@ -66,5 +66,6 @@ function clearInitialAreas(){
 }
 
 function drawPlayers(){
+  
 
 }
